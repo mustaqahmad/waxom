@@ -1,0 +1,1000 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul,li,ol{
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+
+
+
+
+
+
+
+/* navbar start */
+
+nav{
+    width: 100%;
+    /*অনেক পরে দিছি  উপরের মেনুবার ছবির ভিতর আনার জন্য*/
+    position: absolute;
+    z-index: 999;
+    /* পরে দিছি  */
+    /* padding: 40px 0px; */
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+nav .logo{
+    background:url(./images/logo.png) no-repeat center;
+    width: 280px;
+    float: left;
+    padding: 65px 0px;
+}
+nav .menu{
+    width: 890px;
+    float: left;
+    /* পরে দিছি   24.00*/
+    text-align: right;
+    padding: 60px 0px;
+}
+nav .menu ul{
+}
+nav .menu ul li{
+    display: inline-block;
+    /* বোঝতে হবে           এটা এ   তে দেয়া যাবেনা */
+        padding-left: 30px;
+
+}
+
+
+
+.clr{
+    clear: both;
+}
+nav .menu ul li a{
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    transition: .3s;
+}
+nav .menu ul li a:hover{
+    
+    color: coral;
+}
+/* navbar end */
+
+
+
+
+
+
+
+
+/* banner start */
+#banner{
+    width: 100%;
+    height: 100vh;
+    background:url(./images/banner.jpg) no-repeat center;
+    background-size: cover;
+}
+#banner .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 17, 17,.4);
+}
+#banner .content{
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding-top: 308px;
+    
+}
+#banner .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    
+}
+    
+#banner .content h1{
+    font-size: 52px;
+    font-weight: 800;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+#banner .content p{
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+    width: 572px;
+    margin-left: 300px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 24px;
+    padding-bottom: 37px;
+}
+#banner .content a{
+    font-size: 14px;
+    font-weight: 800;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    padding: 21px 37px;
+    background-color: #998675;
+    border-radius: 5px;
+    border-bottom: 3px solid #736357;
+    transition: .3s;
+}
+#banner .content a:hover{
+    background-color: #806f61;
+
+}
+/* banner end */
+
+
+
+
+
+
+
+  /* service start */
+#service{
+    padding-top: 80px;
+}
+#service .service-item{
+    width: 25%;
+    float: left;
+    text-align: center;
+    padding-bottom: 80px;
+    
+}
+#service .service-item i{
+    font-size: 50px;
+    color: #555;
+    transition: .3s;
+}
+#service .service-item h3{
+    font-size: 22px;
+    font-weight: 300;
+    color: #8c8c8c;
+    font-family: 'Raleway', sans-serif;
+    padding: 25px 0 15px 0;
+    transition: .3s;
+}
+#service .service-item p{
+    font-size: 14px;
+    font-weight: 300;
+    color: #8c8c8c;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 24px;
+    position: relative;
+}
+/* ভালো করে শিখতে হবে */
+#service .service-item p::after{
+    width: 70px;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f1eee9;
+    content: "";
+    transition: .3s;
+    
+}
+#service .service-item i:hover{
+    color: #bda382;
+}
+#service .service-item h3:hover{
+    color: #bda382;
+}
+#service .service-item:hover p::after{
+    background-color:#bda382 ;
+    width: 100px;
+}
+
+/* service end */
+
+
+
+
+
+
+
+/* project start */
+   #project{
+       padding-top: 30px;
+       
+   }
+   #project .title{
+     text-align: center;
+   }
+   #project .title h2{
+       /* there is some problem */
+       margin: 0 auto;
+       width: 281px;
+       font-size: 30px;
+       font-weight: 600; 
+       color: #555;
+       font-family: 'Raleway', sans-serif;
+   }
+   #project .title p{
+        text-align: center;
+        font-size: 16px;
+        font-weight: 300;
+        color: #8c8c8c;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 24px;
+        position: relative;
+        width: 770px;
+        margin: 0 auto;
+        padding-top: 19px;
+}
+#project ul{
+    text-align: center;
+}
+    #project ul li{
+        display: inline-block;
+        margin: 40px 5px ;
+        background-color: white;
+        color: #8c8c8c;
+        padding: 10px 20px;
+        border: .5px solid #ebebeb;
+        border-radius: 5px;
+        transition: all linear .3s;
+}
+
+#project ul li:hover{
+    background-color:#bda382 ;
+    color: white;
+}
+
+#project .project-item{
+    width: 370px;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+/* এখানে বুঝতে হবে */
+#project .project-item.mr-none{
+    margin-right: 0;
+} 
+#project .image{
+    position: relative;
+}
+/* hover করার পর নিচে overlay টা একটু বেশি আসে সেজন্য */
+#project .image img{
+    display: block;
+    width: 100%;
+}
+#project .image .overlay{
+    position: absolute;
+    /* এখানে বুঝতে হবে */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,.4);
+    opacity: 0;
+    transition: all linear .3s;
+}
+
+#project .image .icon{
+    height: 238px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#project .image .icon i{
+    font-size: 25px;
+    color: #fff;
+    /* এখানে বুঝতে হবে */
+    margin: 0 10px;
+    font-weight: 400;
+    transition: all linear .3s;
+}
+#project .image .icon i:hover{
+    color: #c7b299;
+    cursor: pointer;
+}
+#project .project-item:hover .image .overlay{
+    opacity: 1;
+}
+#project .project-item .text{
+    background-color: #fbfaf8;
+    /* পরে */
+    padding: 30px 0 30px 30px;
+    transition: all linear .3s;
+}
+#project .project-item .text h3{
+    font-size: 20px;
+    font-weight: 500;
+    color:#c7b299 ;
+    font-family: 'Raleway', sans-serif;
+}
+#project .project-item .text p{
+    font-size: 14px;
+    font-weight: 300;
+    color:#d1d1d1 ;
+    font-family: 'Montserrat', sans-serif;}
+#project .project-item:hover .text{
+        background-color: #1f1f20;
+    }
+#project .project-item:hover .text h3{
+        color: #ffffff;
+    }
+#project .project-item:hover .text p{
+        color: #c7b299;
+    }
+    .button{
+        text-align: center;
+    }
+    .button a{
+        font-size: 14px;
+        font-weight: 800;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        text-transform: uppercase;
+        padding: 20px 45px;
+        background-color: #998675;
+        border-radius: 5px;
+        border-bottom: 3px solid #736357;
+        transition: .3s;
+    }
+    .button a:hover{
+        background-color: #806f61;
+    
+    } 
+    .hidden a{
+        opacity:0;
+        cursor: none;
+        
+    }
+
+/* project end */
+
+
+
+
+
+
+
+  /* video start */
+  /* এখানে বুঝতে হবে */
+  #video{
+      padding-top:80px ;
+  }
+
+
+  #video .video-bg{
+      width: 100%;
+      height: 600px;
+      background: url(./images/video-background.png) no-repeat center;
+      background-size: cover;
+      
+  }
+  #video .video-bg .overlay{
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, .5);
+      text-align: center;
+      
+      padding: 210px 0 252px 0;
+  }
+  #video .video-bg .overlay h3{
+      font-size: 30px;
+      font-weight: 500;
+      color: #ffffff;
+      font-family: 'Raleway', sans-serif;
+  }
+  #video .video-bg .overlay p{
+      font-size: 16;
+      font-weight: 300;
+      color: #ffffff;
+      font-family: 'Montserrat', sans-serif;
+      line-height: 28px;
+      width: 500px;
+      margin: 0 auto;
+      padding-top: 15px;
+      text-align: center;
+  }
+  #video .video-bg .overlay i{
+      font-size: 70px;
+      color: white;
+      background-color: rgba(81, 85, 90, .5);
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+
+  }
+  /* video end */
+
+
+
+
+
+
+
+  /* counter part start */
+  #counter{
+      width: 100%;
+      padding: 65px 0 92px 0;
+      background-image: linear-gradient(to right, #211b19 , #4e3427);
+  }
+  #counter .counter-item{
+      width: 20%;
+      
+      float: left;
+      text-align: center;
+  }
+  #counter .counter-item i{
+      font-size: 45px;
+      color: #c7b299;
+      padding-bottom: 16px;
+  }
+  #counter .counter-item h3{
+    color: #f1f0f0;
+    font-size: 48px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 5px;
+}
+  #counter .counter-item p{
+      color: #c7b299;
+      font-size: 14px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  /* counter part end */
+
+
+
+
+
+
+
+  /* post part start */
+  #post{
+      padding-top: 80px;
+
+  }
+  #post .title{
+     text-align: center;
+   }
+   #post .title h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: #555;
+    font-family: 'Raleway', sans-serif;
+}
+   #post .title p{
+    font-size: 16px;
+    font-weight: 300;
+    color: #8c8c8c;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 24px;
+    position: relative;
+    width: 770px;
+    margin: 0 auto;
+    padding-top: 19px;
+}
+#post .post-main{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 30px;
+    padding-top: 40px;
+}
+#post .post-item{
+    width: 370px;
+}
+.padding-bottom{
+    padding-bottom: 40px;
+}
+#post .post-item .image{
+    position: relative;
+}
+#post .post-item .image .date{
+    position: absolute;
+    display: block;
+    background-color: #252525;
+    color: white;
+    text-align: center;
+    top: 20px;
+    left: 20px;
+    border-radius: 3px;
+    /* padding: 9px 11px 6px; */
+}
+#post .post-item .image .date h5{
+    font-size: 24px;
+    font-weight: 300;
+    border-radius: 3px;
+    background-color:#363636;
+    padding:9px 11px 6px ;
+    font-family: 'Montserrat', sans-serif;
+}
+#post .post-item .image .date h6{
+    font-size: 12px;
+    font-weight: 400;
+    padding-bottom: 8px;
+    padding-top: 4px;
+    font-family: 'Raleway', sans-serif;
+    
+}
+#post .post-item .image .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, .7);
+    opacity: 0;
+    transition: all linear .3s;
+}
+#post .post-item .image img{
+    display: block;
+}
+#post .post-item:hover .image .overlay{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+#post .post-item .text{
+    border: 1px solid #f8f8f8;
+    border-top: none;
+    padding:  30px 0 30px 27px;
+    transition: all linear .3s;
+}
+#post .post-item .text h4{
+    font-size: 20px;
+    font-weight: 500;
+    color: #555555;
+    font-family: 'Raleway', sans-serif;  
+    transition: all linear .3s;  
+}
+#post .post-item .text p{
+    font-size: 14px;
+    font-weight: 300;
+    color: #8c8c8c;
+    line-height: 24px;
+    padding-top: 15px;
+    font-family: 'Montserrat', sans-serif; 
+    transition: all linear .3s;   
+}
+#post .post-item .text a{
+     font-size: 14px;
+    font-weight: 300;
+    padding-top: 16px;
+    color: #8c8c8c;
+    line-height: 24px;
+    font-family: 'Montserrat', sans-serif;
+    transition: all linear .3s; 
+}
+ #post .post-item .text a i{
+     padding-left: 10px;
+ }
+ #post .post-item:hover .text{
+     background-color: #362f2d;
+ }
+ #post .post-item:hover .text h4{
+     color: #c7b299;
+ }
+ #post .post-item:hover .text p{
+     color: #ffffff;
+ }
+ #post .post-item:hover .text a{
+     color: #c7b299;
+ }
+
+  /* post part end */
+
+
+
+
+
+
+
+/* footer part start */
+#footer{
+    background-color: #191919;
+    padding: 80px 0 80px 0;
+    color: wheat;
+
+}
+#footer .footer-item h2{
+    font-size: 24px;
+    color: white;
+    
+    font-weight: 600;
+    
+    font-family: 'Raleway', sans-serif;
+}
+
+#footer h2{
+    color: white;
+}
+#footer .footer-main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    
+    
+}
+#footer .footer-main .waxom{
+    width: 278px;
+}
+#footer .footer-main .waxom p{ 
+    padding: 30px 25px 30px 0;
+    width: 271px;
+    line-height:25px;
+    color: #555555;
+
+}
+#footer .footer-main .waxom a{
+    font-size: 20px;
+    font-weight: 500;
+    color: #b8b8b8;
+    font-family: 'Raleway', sans-serif;
+}
+#footer .footer-main .waxom i{
+    padding-left: 10px;
+}
+#footer .waxom p:hover{
+    color: #c7b299;
+    transition: .5s
+} 
+
+
+#footer .recent{
+    width: 308px;
+    padding-top: 15px;
+    width: 270px;
+    padding-left: 20px;
+}
+#footer .recent1 h6{
+    padding-top: 30px;
+    color: #555555;
+}
+#footer .footer-item span{
+    color: #0888aa;
+}
+#footer .recent1 p{
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(104, 99, 91);
+    color: #555555;
+    padding-right: 20px;
+}
+#footer .recent2 h6{
+    padding-top: 20px;
+    color: #555555;
+}
+#footer .recent2 p{
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(104, 99, 91);
+    color: #555555;
+    padding-right: 20px;
+}
+#footer .recent3 p{
+    padding-right: 20px;
+    color: #555555;
+    
+}
+#footer .recent3 h6{
+    padding-top: 20px;
+    color: #555555;
+}
+
+#footer .recent1{
+    line-height: 19px;
+}
+#footer .recent2{
+    line-height: 19px;
+}
+#footer .recent3{
+    line-height: 19px;
+}
+#footer .recent1:hover h6{
+    color: white;
+    transition: .5s
+}
+#footer .recent1:hover p{
+    color: #c7b299;
+    transition: .5s
+}
+#footer .recent2:hover h6{
+    color: white;
+    transition: .5s
+}
+#footer .recent2:hover p{
+    color: #c7b299;
+    transition: .5s
+}
+#footer .recent3:hover h6{
+    color: white;
+    transition: .5s
+}
+#footer .recent3:hover p{
+    color: #c7b299;
+    transition: .5s
+}
+
+
+
+
+
+
+
+
+
+#footer .twitter{
+    width: 307px;
+    padding: 15px 20px 0 20px;
+    color: #555555;
+}
+#footer .twitter1 h4{
+    padding:30px 0 10px 0 ;
+}
+#footer .twitter2 h4{
+    padding:20px 0 10px 0 ;
+}
+#footer .twitter3 h4{
+    padding:20px 0 10px 0 ;
+}
+#footer .twitter3 span{
+    color: #8d8d8d;
+}
+#footer .twitter1 p{
+    padding-bottom:20px ;
+    border-bottom: 1px solid rgb(104, 99, 91);
+    
+}
+#footer .twitter2 p{
+    padding-bottom:20px ;
+    border-bottom: 1px solid rgb(104, 99, 91);
+}
+#footer .twitter1:hover h4{
+    color: #c7b299;
+    transition: .5s
+}
+#footer .twitter1:hover p{
+    color: #c7b299;
+    transition: .5s
+}
+#footer .twitter2:hover h4{
+    color: #c7b299;
+    transition: .5s
+}
+#footer .twitter2:hover p{
+    color: #c7b299;
+    transition: .5s
+}
+#footer .twitter3:hover h4{
+    color: #c7b299;
+    transition: .5s
+}
+#footer .twitter3:hover p{
+    color: #c7b299;
+    transition: .5s
+}
+
+
+
+
+
+
+#footer .widget{
+    width: 275px;
+    padding-top: 15px;
+    text-align: right;
+}
+#footer .widget h2{
+    text-align: left;
+    padding-left: 9px;
+}
+/* footer part end */
+
+
+#copyright{
+    background-color: black;
+}
+#copyright .text{
+    width: 100%;
+    height: 110px;
+    display: grid;
+    grid-template-columns: auto auto;
+    color: #555555;
+    padding:47px 0 52px 0;
+}
+#copyright .text .left{
+    text-align: left;
+    
+}
+#copyright .text .left span{
+    padding-right: 20px;
+    border-right: 1px solid rgb(102, 97, 85);
+}
+#copyright .color{
+    color: #959595;
+}
+#copyright .faq{
+    color: #c7b299;
+    padding-left: 5px;
+}
+
+
+
+#copyright .text .right{
+    text-align: right;
+}
+#copyright .text .right span{
+    padding-left: 12px;
+    border-left: 1px solid rgb(139, 126, 92);
+}
+#copyright .noborder{
+    border-right: 10px solid;
+}
+#multipage nav{
+    
+    position: static;
+    background-color: #252525;
+}
+
+.breadcrumb {
+    width: 100%;
+    background-color: #ddd;
+    text-align: center;
+    padding: 30px 0;
+}
+
+
+
+
+
+.breadcrumb a{
+    font-size: 16px;
+    font-weight: 600px;
+    color: #111;
+    font-family: 'Montserrat', sans-serif;
+}
+.breadcrumb i{
+    font-weight: 400;
+    font-size: 18px;
+    padding: 0 5px;
+}
+.breadcrumh span{
+    font-size: 15px;
+    font-weight: 600;
+    color: #353535;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#about-page{
+    padding-bottom: 30px;
+    width: 100%;
+}
+#about-page .image{
+    width: 400px;
+    height: 400px;
+    background-color: red;
+    float: left;
+}
+#about-page .text{
+    width: 740px;
+    height: 400px;
+    background-color: red;
+    margin-left: 30px;
+    float: left;
+}
+#about-page .about-main{
+    /* padding-top: 40px; */
+}
+#multipage .title{
+    text-align: center;
+    padding: 30px 0 30px 0;
+}
+#multipage .title h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: #555;
+    font-family: 'Raleway', sans-serif;
+}
+#multipage .title p{
+    margin: 0 auto;
+    width: 770px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #8c8c8c;
+    line-height: 24px;
+    /* padding-top: 19px; */
+    font-family: 'Montserrat', sans-serif; 
+    
+}
+#multipage .page-main{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+    justify-content: space-between;
+    padding-bottom: 80px;
+}
+#multipage .page-item{
+    position: relative;
+}
+#multipage .page-main .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+    opacity: 0;
+    transition: all linear .3s;
+}
+#multipage .page-item:hover .overlay{
+    opacity: 1;
+}
+/* এখানে বুঝতে হবে */
+#multipage .page-item img{
+    display: block;
+    width: 100%;
+}
+#multipage .contact-main{
+    padding-bottom: 40px;
+}  
+#multipage .contact-main label{
+    font-size: 30px;
+    font-weight: 500;
+    color: #111;
+    margin-left: 170px;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 10px 13px 3px rgb(255, 0, 0);
+} 
+#multipage .contact-main input{
+    font-size: 24px;
+    font-weight: 400;
+    color: #111;
+    font-family: 'Raleway', sans-serif;
+    height: 40px;
+    padding: 0 20px;
+    width: 100%;
+} 
+#multipage .contact-main .form{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+}
+#multipage .item5{
+    padding-top: 20px;
+}
+#multipage .item5 label{
+    margin-left: 447px;
+    
+}
+#multipage .item5 textarea{
+    width:100%;
+}
+
+
+
+
+
+
